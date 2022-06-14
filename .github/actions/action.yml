@@ -3,11 +3,13 @@ description: 'This action checks out the commit, sets up Node and installs deps 
 author: 'eventespresso'
 inputs:
     name: pratheesh
-    default: "pratheeshb"
+      description: enter user data
+      default: "pratheeshb"
+
 runs:
   using: 'composite'
   steps:
   - name: From composite action
     run: |
-    echo "Hellow ${{ inputs.name }}"
+    echo "Hello ${{ inputs.name }}"
      

@@ -1,0 +1,13 @@
+name: 'Checkout and run yarn'
+description: 'This action checks out the commit, sets up Node and installs deps using yarn.'
+author: 'eventespresso'
+inputs:
+    name: pratheesh
+    default: "pratheeshb"
+runs:
+  using: 'composite'
+  steps:
+  - name: From composite action
+    run: |
+    echo "Hellow ${{ inputs.name }}"
+     

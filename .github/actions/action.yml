@@ -11,4 +11,7 @@ runs:
   steps:
   - name: From composite action
     run: |
-    echo "Hello ${{ inputs.name }}"
+      echo "testing the workflow" > test.txt
+      ls -ltr
+      echo "Hello ${{ inputs.name }}"
+    shell: bash

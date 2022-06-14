@@ -2,8 +2,8 @@ name: 'Checkout and run yarn'
 description: 'This action checks out the commit, sets up Node and installs deps using yarn.'
 author: 'eventespresso'
 inputs:
-    name: pratheesh
-      description: enter user data
+    name:
+      description: "enter user data"
       default: "pratheeshb"
 
 runs:
@@ -12,4 +12,3 @@ runs:
   - name: From composite action
     run: |
     echo "Hello ${{ inputs.name }}"
-     
